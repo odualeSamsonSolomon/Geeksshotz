@@ -1,0 +1,137 @@
+/* Amateur-style photography portfolio (W3Schools-like) */
+:root{
+  --primary: #0d47a1; /* deep blue */
+  --accent: #f4b400; /* warm accent */
+  --muted: #222;
+  --bg: #f7f7f9;
+}
+/* Basic reset */
+*{box-sizing:border-box}
+body{
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--muted);
+  margin:0;
+  line-height:1.45;
+}
+/* Nav */
+nav{
+  background: linear-gradient(90deg,var(--primary),#1565c0);
+  padding:14px 0;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+nav .nav-links{
+  max-width:1100px;
+  margin:0 auto;
+  display:flex;
+  gap:18px;
+  justify-content:center;
+  padding:0 12px;
+}
+nav a{
+  color:#fff;
+  text-decoration:none;
+  padding:8px 12px;
+  border-radius:6px;
+  font-weight:700;
+}
+nav a:hover{background: rgba(255,255,255,0.15)}
+
+/* Page container for sections */
+.container{
+  max-width:1100px;
+  margin:20px auto;
+  padding:0 12px;
+}
+h1,h2{ text-align:center }
+h1{font-size:2rem;color:#111;margin-bottom:6px}
+h2{font-size:1.5rem;margin:8px 0 16px;color:var(--primary)}
+
+.subtitle{color:#444;text-align:center;margin-top:0;margin-bottom:12px}
+
+.hero-wrap{display:flex;justify-content:center;margin:12px 0;position:relative}
+.hero{width:100%;height:420px;border-radius:8px;display:block;object-fit:cover}
+.hero-overlay{position:absolute;left:0;top:0;width:100%;height:100%;border-radius:8px;background:linear-gradient(180deg,rgba(0,0,0,0.12),rgba(0,0,0,0.04))}
+.hero--color1{background:linear-gradient(135deg,#0d47a1,#1565c0);}
+
+/* Simple intro card with dotted border - very "learner" style */
+/* Intro and about text - subtle card */
+section#home p,
+section#about p,
+section#contact p{
+  background:#fff;
+  padding:18px;
+  border-radius:8px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* Projects / Gallery */
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:22px;
+  align-items:start;
+}
+.project-card{
+  background:#fff;
+  border-radius:8px;
+  overflow:hidden;
+  text-align:left;
+  box-shadow:0 8px 26px rgba(14,39,69,0.06);
+ }
+.project-icon{
+  width:100%;
+  height:200px;
+  display:block;
+}
+.project-color-1{background:linear-gradient(135deg,#ff9a9e,#fad0c4)}
+.project-color-2{background:linear-gradient(135deg,#a18cd1,#fbc2eb)}
+.project-color-3{background:linear-gradient(135deg,#f6d365,#fda085)}
+.project-color-4{background:linear-gradient(135deg,#fbc2eb,#a6c1ee)}
+.project-color-5{background:linear-gradient(135deg,#c9ffbf,#ffafbd)}
+.project-color-6{background:linear-gradient(135deg,#89f7fe,#66a6ff)}
+.project-info{padding:14px}
+.project-info h3{margin:6px 0 8px;font-size:1.05rem;color:var(--primary)}
+.project-info p{margin:0;color:#555;font-size:0.95rem}
+.project-card:hover{transform:translateY(-6px);transition:transform .18s ease}
+
+/* Pricing table - simple boxed table with a button */
+.pricing-wrapper{background:#fff;padding:16px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.pricing-table{width:100%;border-collapse:collapse}
+.pricing-table th, .pricing-table td{padding:12px;border-bottom:1px solid rgba(0,0,0,0.06);}
+.pricing-table th{background:var(--accent);font-weight:800}
+.book-btn{
+  display:inline-block;
+  padding:8px 12px;
+  background:var(--accent);
+  color:#111;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:800;
+  border:2px solid rgba(0,0,0,0.04);
+  box-shadow:0 6px 16px rgba(0,0,0,0.06);
+}
+.book-btn:hover{opacity:0.9}
+
+/* Contact form - keep the previous simple layout but with stronger border */
+.contact-form{max-width:640px;margin:18px auto;padding:18px;background:#fff;border-radius:10px;box-shadow:0 8px 26px rgba(14,39,69,0.06)}
+.contact-form label{display:block;margin-top:8px;font-weight:700}
+.contact-form input, .contact-form textarea{width:100%;padding:10px;margin-top:6px;border:1px solid rgba(0,0,0,0.12);border-radius:6px}
+.contact-form button{margin-top:12px;padding:10px 16px;background:var(--primary);color:#fff;border:none;border-radius:6px;font-weight:700}
+
+/* Footer */
+footer{max-width:1100px;margin:24px auto;background:var(--accent);padding:16px;border-radius:8px;text-align:center}
+
+/* Small-screen tweaks */
+@media (max-width:900px){
+  .project-icon img{height:180px}
+}
+@media (max-width:600px){
+  h1{font-size:1.6rem}
+  .project-grid{gap:14px}
+  nav .nav-links{gap:10px}
+}
+
+/* Intentionally inconsistent extras to feel 'amateur' */
+
+/* end */

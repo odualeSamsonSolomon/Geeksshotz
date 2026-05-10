@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oduale Samson</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="container">
+        <h1>GEEKSSHOTZ Photography</h1>
+        <p class="subtitle">Capturing moments across Nigeria — weddings, portraits, events.</p>
+        <div class="hero-wrap">
+            <img class="hero" src="Images/smiling-portrait-studio-woman.jpg" alt="Smiling portrait">
+        </div>
+        <p id="introduction">I am Oduale Samson, a photographer based in Nigeria specialising in wedding and lifestyle photography. I focus on natural light, candid moments, and storytelling. Browse the portfolio and reach out to book a session.</p>
+    </section>
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-icon project-color-1"></div>
+                    <div class="project-info">
+                        <h3>Weddings</h3>
+                        <p>Full-day storytelling, candid and formal shots.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon project-color-2"></div>
+                    <div class="project-info">
+                        <h3>Studio Portraits</h3>
+                        <p>Clean backgrounds, professional retouching.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon project-color-3"></div>
+                    <div class="project-info">
+                        <h3>Outdoor Shoots</h3>
+                        <p>On-location sessions across scenic Nigerian spots.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon project-color-4"></div>
+                    <div class="project-info">
+                        <h3>Event Coverage</h3>
+                        <p>Conferences, launches and community events.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon project-color-5"></div>
+                    <div class="project-info">
+                        <h3>Family & Lifestyle</h3>
+                        <p>Natural, story-driven family sessions.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon project-color-6"></div>
+                    <div class="project-info">
+                        <h3>Fashion & Editorial</h3>
+                        <p>Lookbooks, portfolio shoots and creative direction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+            <section id="pricing" class="container">
+                <h2>Photography Booking & Prices</h2>
+                <div class="pricing-wrapper">
+                    <table class="pricing-table">
+                            <thead>
+                                <tr>
+                                    <th>Service</th>
+                                    <th>Starting Price</th>
+                                    <th>Details</th>
+                                    <th>Book</th>
+                                </tr>
+                            </thead>
+                        <tbody>
+                            <tr>
+                                    <td>Weddings</td>
+                                    <td>$1,500</td>
+                                    <td>Full-day coverage, digital delivery. Second photographer available.</td>
+                                    <td><a class="book-btn" href="mailto:you@example.com?subject=Booking%20-%20Weddings">Book</a></td>
+                            </tr>
+                            <tr>
+                                    <td>Studio Photoshoot</td>
+                                    <td>$200</td>
+                                    <td>1 hour session — 10 edited images included.</td>
+                                    <td><a class="book-btn" href="mailto:you@example.com?subject=Booking%20-%20Studio%20Photoshoot">Book</a></td>
+                            </tr>
+                            <tr>
+                                    <td>Outdoor Shoot</td>
+                                    <td>$250</td>
+                                    <td>1–2 hour session, single location; travel included within 20km.</td>
+                                    <td><a class="book-btn" href="mailto:you@example.com?subject=Booking%20-%20Outdoor%20Shoot">Book</a></td>
+                            </tr>
+                            <tr>
+                                    <td>Event Coverage</td>
+                                    <td>$500</td>
+                                    <td>Up to 4 hours, online gallery; additional hours charged per hour.</td>
+                                    <td><a class="book-btn" href="mailto:you@example.com?subject=Booking%20-%20Event%20Coverage">Book</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+    <!-- removed duplicate pricing section -->
+    <section id="about" class="container">
+        <h2>About Geeksshotz Photography</h2>
+        <p>Learn more about Geeksshotz's background and experience.</p>
+    </section>
+    <section id="contact" class="container">
+        <h2>Contact Geeksshotz Photography</h2>
+        <p>Get in touch with Geeksshotz Photography for inquiries or collaborations.</p>
+        <div class="contact-card contact-form">
+                <p>If you'd like messages sent from the site (no mail app needed), sign up at Formspree and paste your form endpoint into the `action` below. Instructions are below the form.</p>
+                                <!-- Functional form using FormSubmit.co (no server needed). You will receive a verification email once you submit the first test. -->
+                                <form id="contact-form" class="contact-form" action="https://formsubmit.co/odualesolomon@gmail.com" method="POST">
+                                        <!-- Disable FormSubmit's captcha, set email subject -->
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_subject" value="New booking request from website">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit" class="book-btn">Send Message</button>
+                </form>
+                <div class="note" style="margin-top:.75rem;font-size:.95rem;color:#444">
+                                        After your first submission you'll receive a verification email from FormSubmit — open it and click the confirmation link to start receiving messages to <strong>odualesolomon@gmail.com</strong>. If you'd rather use Formspree or another provider, paste that endpoint into the form's `action` instead.
+                </div>
+        </div>
+    </section>
+<footer>
+    <p>&copy; 2026 Oduale Samson. With love 💙.</p>
+</footer>
+</body>
+</html>
